@@ -18,7 +18,7 @@ public class ZenAdds {
     public static final String NAME = "Zen' Adds";
     public static final String VERSION = "0.7";
     public static final String CLIENT_PROXY_CLASS = "com.zenadds.proxy.ClientProxy";
-    public static final String SERVER_PROXY_CLASS = "io.enderoc.proxy.ServerProxy";
+    public static final String SERVER_PROXY_CLASS = "com.zenadds.proxy.ServerProxy";
 
     public static Logger logger;
 

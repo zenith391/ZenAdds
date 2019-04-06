@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import com.zenadds.IHasModel;
 import com.zenadds.ZenAdds;
 import com.zenadds.init.Blocks;
+import com.zenadds.init.Items;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -22,13 +23,14 @@ public class RegistryEventHandler {
 	@SubscribeEvent
 	public static void onItemRegister(RegistryEvent.Register<Item> event) {
 		ZenAdds.logger.info("Registering items..");
+		Items.init();
 		event.getRegistry().registerAll(REGISTER_ITEMS.toArray(new Item[REGISTER_ITEMS.size()]));
 	}
 	
 	@SubscribeEvent
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
-		Blocks.init();
 		ZenAdds.logger.info("Registering blocks..");
+		Blocks.init();
 		event.getRegistry().registerAll(REGISTER_BLOCKS.toArray(new Block[REGISTER_BLOCKS.size()]));
 	}
 	
