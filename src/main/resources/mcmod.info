@@ -1,16 +1,16 @@
 [
-{
-  "modid": "zenadds",
-  "name": "Zen' Adds",
-  "description": "Mod originally made for TechHaven server, adding credit cards",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["zenith391"],
-  "credits": "Me",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
-}
+	{
+		"modid": "zenadds",
+		"name": "Zen Additions",
+		"description": "Mod originally made for TechHaven server, adding credit cards",
+		"version": "0.8",
+		"mcversion": "${mcversion}",
+		"url": "",
+		"updateUrl": "",
+		"authorList": ["zenith391"],
+		"credits": "zenith391/Zen1th",
+		"logoFile": "",
+		"screenshots": [],
+		"dependencies": []
+	}
 ]

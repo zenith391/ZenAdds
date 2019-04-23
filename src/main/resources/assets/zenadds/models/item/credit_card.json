@@ -1,7 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "zenadds:items/credit_card"
+		"layer0": "zenadds:item/credit_card"
 	 },
 	 
 	"display": {

@@ -31,8 +31,6 @@ public class CreditCard extends Item implements IHasModel {
 		ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
 	}
 	
-	
-	
 	@Override
 	public void addInformation(ItemStack stack, World world, List<String> lore, ITooltipFlag flag) {
 		if (stack.getTagCompound() != null) {
