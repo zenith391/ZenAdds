@@ -4,6 +4,8 @@ import com.zenadds.ZenAdds;
 import com.zenadds.event.RegistryEventHandler;
 import com.zenadds.oc.ATMReaderTE;
 import com.zenadds.oc.CreditCardReader;
+import com.zenadds.oc.GERTRouter;
+import com.zenadds.oc.GERTRouterTE;
 
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
@@ -14,6 +16,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class Blocks {
 	
 	public static CreditCardReader oc_atmReader;
+	public static GERTRouter oc_gertRouter;
 	
 	private static void register(Block block) {
 		RegistryEventHandler.REGISTER_BLOCKS.add(block);
@@ -30,9 +33,12 @@ public class Blocks {
 		ZenAdds.logger.info("Registering blocks..");
 		
 		oc_atmReader = new CreditCardReader();
+		oc_gertRouter = new GERTRouter();
 		
 		register(oc_atmReader);
-		GameRegistry.registerTileEntity(ATMReaderTE.class, new ResourceLocation(ZenAdds.MODID, "universal_router"));
+		register(oc_gertRouter);
+		GameRegistry.registerTileEntity(ATMReaderTE.class, new ResourceLocation(ZenAdds.MODID, "atm_reader"));
+		GameRegistry.registerTileEntity(GERTRouterTE.class, new ResourceLocation(ZenAdds.MODID, "gert_router"));
 	}
 	
 }
